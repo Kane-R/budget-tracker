@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 require('dotenv/config');
 
-const dbConfig = process.env.MONGODB_URI;
+const dbConfig = process.env.MONGODB_URI || "mongodb://localhost/budgetdb";;
 
 
 async function connectDB(){
